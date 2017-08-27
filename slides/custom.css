@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Iosevka';
+  src: url('https://be5invis.github.io/Iosevka/assets/iosevka-regular.woff2') format('opentype');
+}
+
+code,
+pre {
+  font-family: 'Iosevka';
+  font-size: 1.4em;
+  color: #c5d4dd;
+  text-rendering: optimizeLegibility;
+  /* Enable swashes */
+  /* Enable both kerning and ligatures */
+  font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "calt" 1;
+  /* ligatures types */
+  font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
+}
