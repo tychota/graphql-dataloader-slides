@@ -1,17 +1,43 @@
 @font-face {
-  font-family: 'Iosevka';
-  src: url('https://be5invis.github.io/Iosevka/assets/iosevka-regular.woff2') format('opentype');
+  font-family: 'Fira Code';
+  src: url('./assets/fonts/FiraCode-Regular.woff2') format('woff2');
+}
+
+a {
+  color: #e6eef3;
+  text-decoration: none;
+  margin-bottom: -2px;
+  border-bottom: 2px solid rgba(127, 193, 202, 0.3);
+}
+
+a:hover {
+  color: rgb(127, 193, 202);
+}
+
+strong {
+  color: #dada93;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  /* Enable swashes */
+  /* Enable both kerning and ligatures */
+  font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "calt" 1;
+  /* ligatures types */
+  font-variant-ligatures: common-ligatures discretionary-ligatures
+    historical-ligatures contextual;
 }
 
 code,
 pre {
-  font-family: 'Iosevka';
-  font-size: 1.4em;
+  font-family: 'Fira Code', monospace;
+  font-size: 1.15em;
   color: #c5d4dd;
   text-rendering: optimizeLegibility;
   /* Enable swashes */
   /* Enable both kerning and ligatures */
   font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "calt" 1;
   /* ligatures types */
-  font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
+  font-variant-ligatures: common-ligatures discretionary-ligatures
+    historical-ligatures contextual;
 }
