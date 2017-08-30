@@ -1,19 +1,33 @@
-import BamerBusiness from "../../business/bamer";
-import BookBusiness from "../../business/book";
+import FriendBusiness from "../../business/friend";
+import CatBusiness from "../../business/cat";
+import DogBusiness from "../../business/dog";
+import HatBusiness from "../../business/hat";
 
 export default {
   Query: {
-    allBamers(root, _, ctx) {
-      return BamerBusiness.loadAll(ctx);
+    allFriends(root, _, ctx) {
+      return FriendBusiness.loadAll(ctx);
     },
-    bamer(root, args, ctx) {
-      return BamerBusiness.load(ctx, args.id);
+    friend(root, args, ctx) {
+      return FriendBusiness.load(ctx, args.id);
     },
-    allBooks(root, _, ctx) {
-      return BookBusiness.loadAll(ctx);
+    allCats(root, _, ctx) {
+      return CatBusiness.loadAll(ctx);
     },
-    book(root, args, ctx) {
-      return BookBusiness.load(ctx, args.id);
+    cat(root, args, ctx) {
+      return CatBusiness.load(ctx, args.id);
+    },
+    allDogs(root, _, ctx) {
+      return DogBusiness.loadAll(ctx);
+    },
+    dog(root, args, ctx) {
+      return DogBusiness.load(ctx, args.id);
+    },
+    allHats(root, _, ctx) {
+      return HatBusiness.loadAll(ctx);
+    },
+    hat(root, args, ctx) {
+      return HatBusiness.load(ctx, args.id);
     }
   }
 };

@@ -10,14 +10,18 @@ glob.sync("**/*.type.gql", { cwd: __dirname }).forEach(filename => {
   typeDefs.push(fileContent);
 });
 
-import BammerResolver from "./Bamer/Bamer.resolvers";
-import BookResolver from "./Book/Book.resolvers";
+import FriendResolver from "./Friend/Friend.resolvers";
+import CatResolver from "./Cat/Cat.resolvers";
+import DogResolver from "./Dog/Dog.resolvers";
+import HatResolver from "./Hat/Hat.resolvers";
 import QueryResolver from "./Query/Query.resolvers";
 import MutationResolver from "./Mutation/Mutation.resolvers";
 
 const resolvers = {
-  ...BammerResolver,
-  ...BookResolver,
+  ...FriendResolver,
+  ...CatResolver,
+  ...DogResolver,
+  ...HatResolver,
   ...QueryResolver,
   ...MutationResolver
 };

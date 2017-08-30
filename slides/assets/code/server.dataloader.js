@@ -29,14 +29,25 @@ import getViewerAndRoles from "../business/utils/auth";
 
 // import the schema and mount it under /graphql
 import schema from "../presentation/schema";
+// get the dataloader for each request
+import * as business from "../business";
 
 router.post(
   "/graphql",
   graphqlKoa(async ctx => {
     // get the user and role from request
     const { user, roles } = await getViewerAndRoles(ctx.state.user);
+    // build the data loader map, using reduce
+    const dataloaders = Object.keys(
+      business
+    ).reduce((dataloaders, loaderKey) => {
+      return {
+        ...dataloaders,
+        [loaderKey]: business[loaderKey].getLoaders()
+      };
+    }, {});
     // create a context for each request
-    const context = { user, roles };
+    const context = { dataloaders, user, roles };
     return {
       schema: schema,
       context: context

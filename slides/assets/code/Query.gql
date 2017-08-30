@@ -1,10 +1,18 @@
 type Query {
-  # a bamer, by id
-  bamer(id: ID!): Bamer
-  # all the bamer
-  allBamers: [Bamer]
-  # a book, by id
-  book(id: ID!): Book
-  # all the book
-  allBooks: [Book]
+  # a friend, by id
+  friend(id: ID!): Friend
+  # all the friends
+  allFriends: [Friend]
+  # a dog, by id
+  dog(id: ID!): Dog
+  # all the dogs
+  allDogs: [Dog]
+  # a cat, by id
+  cat(id: ID!): Cat
+  # all the cats
+  allCats: [Cat]
+  # a hat, by id
+  hat(id: ID!): Hat
+  # all the hats
+  allHats: [Hat]
 }
