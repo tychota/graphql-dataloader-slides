@@ -35,7 +35,6 @@ const Root = () => (
     {require("./slides/01-me")}
     {require("./slides/02-topic")}
     {require("./slides/03-problems")}
-    {require("./slides/04-quote")}
     {require("./slides/05-layer")(
       images.layer,
       "Three Layers Approach",
@@ -151,12 +150,13 @@ There is three layers:
         { loc: [0, 1], note: "Import knex connector" },
         { loc: [3, 9], note: "Build custom query to get one" },
         { loc: [30, 36], note: "... a list of" },
-        { loc: [30, 36], note: "... or all cats" },
+        { loc: [27, 30], note: "... or all cats" },
         { loc: [15, 27], note: "... or even a fuzzy search engine" }
       ]}
     />
     {require("./slides/07-example-query")}
     {require("./slides/08-naive-result")}
+    {require("./slides/08-1-server-burned")}
     {require("./slides/10-explanation-1")}
     {require("./slides/11-explanation-2")}
     {require("./slides/09-optimized-result")}
@@ -202,6 +202,9 @@ There is three layers:
         { loc: [70, 71], note: "... and prime loaders" }
       ]}
     />
+    {require("./slides/04-quote")}
+    {require("./slides/12-takeway")}
+    {require("./slides/13-next-steps")}
   </Presentation>
 );
 

@@ -10,27 +10,13 @@ module.exports = (
     <Heading size={2} fit>
       & Dataloader
     </Heading>
-    <Heading size={3}>Break free with the right GraphQL structure</Heading>
+    <Heading size={3}>
+      Break free with the right GraphQL structure
+    </Heading>
     <Text>
-      <Link href="https://github.com/tychota/graphql-dataloader">View the presentation on Github</Link>
-    </Text>
-    <Text margin="20px auto 0px">
-      <Layout>
-        <Fill />
-        <Fill>
-          <Text>Slides</Text>
-          <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style={{ borderStyle: "none" }} alt="CC0" />
-        </Fill>
-        <Fill>
-          <Text>Code</Text>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f8/License_icon-mit-88x31-2.svg"
-            style={{ borderStyle: "none" }}
-            alt="MIT"
-          />
-        </Fill>
-        <Fill />
-      </Layout>
+      <Link href="https://github.com/tychota/graphql-dataloader">
+        View the presentation on Github
+      </Link>
     </Text>
     <NotesMarkdown>
       {`# Slide de titre

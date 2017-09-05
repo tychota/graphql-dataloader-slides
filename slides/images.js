@@ -8,5 +8,6 @@ export default {
   layer4: require("./assets/layer-goals-4.png"),
   exampleQuery: require("./assets/Query.png"),
   naiveImplementation: require("./assets/NaiveImplementation.png"),
-  dataloaderImplementation: require("./assets/DataloaderImplementation.png")
+  dataloaderImplementation: require("./assets/DataloaderImplementation.png"),
+  serverBurned: require("./assets/serverBurn.gif")
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide, Heading, Image } from "spectacle";
+import { Slide, Heading } from "spectacle";
 import { NotesMarkdown } from "../utils";
 import Terminal from "spectacle-terminal";
 
@@ -35,7 +35,7 @@ const LogLine = ({ type, ID }) => (
 
 module.exports = (
   <Slide>
-    <Heading size={2}>OMG, server burned !</Heading>
+    <Heading size={2}>What if we did ?</Heading>
     <Terminal
       title="CatsDogsHatsStatistic"
       output={[
