@@ -9,7 +9,7 @@ import {
 
 class Cat {
   constructor(data, { viewer, role }) {
-    // assert the viewer is autorized to see this cat
+    // assert the viewer is authorized to see this cat
     Cat.viewerCanSee(viewer, role);
 
     this.id = data.id;
@@ -19,7 +19,7 @@ class Cat {
 
     // scope some sensible properties
     if (isAdmin(role) || isVet(role) || isOwnedBy(viewer)) {
-      this.idendificationNumber = data.identificationNumber;
+      this.identificationNumber = data.identificationNumber;
     }
   }
 
