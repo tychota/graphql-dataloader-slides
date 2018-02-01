@@ -15,13 +15,14 @@
   "readme": "README.md",
   "_id": "slides@1.0.0",
   "scripts": {
-    "start":
-      "melodrama-scripts start --include './images.js,./slides,./utils' index.js",
-    "build":
-      "melodrama-scripts build --include './images.js,./slides,./utils' index.js"
+    "start": "melodrama-scripts start --include './images.js,./slides,./utils' index.js",
+    "build": "melodrama-scripts build --include './images.js,./slides,./utils' index.js"
   },
   "dependencies": {
     "@bam.tech/spectacle-code-slide": "^0.4.5",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "font-awesome": "^4.7.0",
     "prismjs": "1.6.0",
     "react": "15.6.1",

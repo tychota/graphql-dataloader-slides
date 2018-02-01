@@ -1,20 +1,12 @@
 import React from "react";
-import {
-  Slide,
-  List,
-  ListItem,
-  Appear,
-  S,
-  Heading,
-  Text
-} from "spectacle";
+import { Slide, List, ListItem, Appear, S, Heading, Text } from "spectacle";
 import { NotesMarkdown } from "../utils";
 
 const inline = { display: "inline", margin: 0 };
 
 module.exports = (
   <Slide>
-    <Heading size={2}>Topic</Heading>
+    <Heading size={2}>Summary</Heading>
     <List margin="40px auto 0px">
       <Appear>
         <ListItem>

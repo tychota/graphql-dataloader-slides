@@ -9,5 +9,7 @@ export default {
   exampleQuery: require("./assets/Query.png"),
   naiveImplementation: require("./assets/NaiveImplementation.png"),
   dataloaderImplementation: require("./assets/DataloaderImplementation.png"),
-  serverBurned: require("./assets/serverBurn.gif")
+  serverBurned: require("./assets/serverBurn.gif"),
+  thomas: require("./assets/thomas.jpg"),
+  tycho: require("./assets/tycho.jpeg")
 };

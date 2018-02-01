@@ -5,27 +5,48 @@ import images from "../images";
 
 module.exports = (
   <Slide>
-    <Heading size={2}>About Me</Heading>
-    <Heading size={3} margin="40px auto 20px">
-      Tycho Tatitscheff
-    </Heading>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        marginBottom: 60
+      }}
+    >
+      <div>
+        <Heading size={2}>About Me</Heading>
+        <Heading size={3} margin="40px auto 20px">
+          Thomas Pucci
+        </Heading>
+        <Text size={2}>
+          <Link href="https://twitter.com/Thomas_Pucci">@Thomas_Pucci</Link>
+        </Text>
+      </div>
+      <div>
+        <Heading size={2}>Thanks to</Heading>
+        <Heading size={3} margin="40px auto 20px">
+          Tycho Tatitscheff
+        </Heading>
+        <Text size={2}>
+          <Link href="https://twitter.com/TychoTa">@TychoTa</Link>
+        </Text>
+      </div>
+    </div>
+    <Image src={images.thomas} height="85" margin="0px auto 20px" />
     <Image src={images.bam} height="85" margin="0px auto 20px" />
-    <Text size={2}>
-      <Link href="https://twitter.com/TychoTa">@TychoTa</Link>
-    </Text>
+    <Image src={images.tycho} height="85" margin="0px auto 20px" />
     <NotesMarkdown>
-      {`# Qui suis je ?
+      {`# Who am I ?
 
-Je m'appelle Tycho Tatitscheff.
+My name is Thomas Pucci
+As I told you before I made this presentation with my coworker Tycho.
+We are both **mobile developpers at BAM**. We specialised in mobile app development.
 
-Je suis **developpeur mobile à BAM**. Nous sommes spécialisés dans le developpement mobile.
+You can contact me on Twitter :)
 
-Si vous souhaitez me contacter, je suis actif sur Twitter.
+I started to get to know GraphQL about 8 month ago.
+Since then I have been working on our first project at BAM which uses GraphQL.
 
-Concernant GraphQL, **cela fait un an et demi** que je suis la technologie. 
-J'ai cocréé avec GraphCool **la première version de [learnapollo](https://www.learnapollo.com/)**.
-
-Nous avons maintenant **un gros projet en production** avec GraphQL.
+This is a huge project. It is now in production. And we learnt a lot dealing with Apollo :)
 
 **-> NO BREAK <-** 
   `}

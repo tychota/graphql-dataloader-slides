@@ -34,6 +34,7 @@ const Root = () => (
     {require("./slides/00-title")}
     {require("./slides/01-me")}
     {require("./slides/02-topic")}
+    {require("./slides/14-project")}
     {require("./slides/03-problems")}
     {require("./slides/05-layer")(
       images.layer,

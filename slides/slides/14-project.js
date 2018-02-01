@@ -6,19 +6,19 @@ const gutter = "25px";
 
 module.exports = (
   <Slide>
-    <Heading size={2}>The problems</Heading>
+    <Heading size={2}>Experience</Heading>
     <Layout>
       <Appear>
         <Fill>
           <Text
             margin={`40px ${gutter} 0 0`}
-            className="fa fa-list"
+            className="fa fa-folder-open"
             style={{ fontSize: "4rem" }}
             aria-hidden="true"
-            textColor="red"
+            textColor="cyan"
           />
           <Text margin={`5px ${gutter} 0 0`} textAlign="center">
-            Unmaintenable custom routes
+            Our first GaphQL project at BAM
           </Text>
         </Fill>
       </Appear>
@@ -26,13 +26,13 @@ module.exports = (
         <Fill>
           <Text
             margin={`40px ${gutter} 0 0`}
-            className="fa fa-scissors"
+            className="fa fa-calendar"
             style={{ fontSize: "4rem" }}
             aria-hidden="true"
-            textColor="red"
+            textColor="cyan"
           />
           <Text margin={`5px ${gutter} 0 0`} textAlign="center">
-            Code hard to test/split/maintain
+            Started 8 months ago
           </Text>
         </Fill>
       </Appear>
@@ -40,13 +40,13 @@ module.exports = (
         <Fill>
           <Text
             margin={`40px ${gutter} 0 0`}
-            className="fa fa-hourglass-start"
+            className="fa fa-code"
             style={{ fontSize: "4rem" }}
             aria-hidden="true"
-            textColor="red"
+            textColor="cyan"
           />
           <Text margin={`5px ${gutter} 0 0`} textAlign="center">
-            Difficult to optimize
+            80 000 lines of JS code
           </Text>
         </Fill>
       </Appear>

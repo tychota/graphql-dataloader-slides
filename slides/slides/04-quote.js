@@ -7,8 +7,11 @@ module.exports = (
     <Heading size={2}>Coworker Quote</Heading>
     <Appear>
       <BlockQuote>
-        <Quote>Before this structure, a ticket took us a day to complete ; after the change, only 40 minutes.</Quote>
-        <Cite>Thomas Pucci</Cite>
+        <Quote>
+          Before this structure, a ticket took us a day to complete ; after the
+          change, only 40 minutes.
+        </Quote>
+        <Cite>Guillaume Diallo-Mulliez</Cite>
       </BlockQuote>
     </Appear>
     <NotesMarkdown>

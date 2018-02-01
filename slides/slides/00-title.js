@@ -10,9 +10,7 @@ module.exports = (
     <Heading size={2} fit>
       & Dataloader
     </Heading>
-    <Heading size={3}>
-      Break free with the right GraphQL structure
-    </Heading>
+    <Heading size={3}>Break free with the right GraphQL structure</Heading>
     <Text>
       <Link href="https://github.com/tychota/graphql-dataloader">
         View the presentation on Github
@@ -21,11 +19,14 @@ module.exports = (
     <NotesMarkdown>
       {`# Slide de titre
 
-Vous pouvez retrouver les slides sur mon **Github**.
+This presentation was initially made by Tycho Tatitscheff. He couldn't come to this meeting.
 
-Je posterais le lien sur le groupe du **Meetup**.
+However, I need to mention him for the great work he has done on this subject.
+You can find all these slides on **Github**.
 
-Les slides sont sous licence **CC0** (domain public), les exemples de code sous licence **MIT**.
+I will post the link on the **Meetup** page.
+
+These slides are under public domain **CC0** license, code examples are under **MIT** licence.
   `}
     </NotesMarkdown>
   </Slide>
